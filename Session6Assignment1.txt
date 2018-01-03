@@ -1,0 +1,16 @@
+CREATE TABLE custom(
+	date STRING,
+	zip code INT,
+	temperature INT
+)
+ROWS FORMAT DELIMITED
+FIELDS TERMINATED BY ',';
+
+LOCAL DATA LOCAL INPATH 'https://drive.google.com/file/d/0Bxr27gVaXO5sa0JBamZXdkpYUFk/view' OVERWRITE INTO TABLE custom;
+
+SHOW TABLES;
+SELECT
+     *
+FROM
+     custom;
+
